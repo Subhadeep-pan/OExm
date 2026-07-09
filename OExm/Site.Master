@@ -1,0 +1,97 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="OExm.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Content/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="Scripts/app.js"></script>
+    <asp:ContentPlaceHolder ID="HeadExtra" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server" class="app-container">
+
+        <!-- SIDEBAR (single shared copy — edit only here) -->
+        <div class="sidebar">
+            <div class="brand-section">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <span class="brand-name">OExm Portal</span>
+            </div>
+
+            <div class="user-profile">
+                <span class="user-name"><%= Session["FullName"] %></span>
+                <span class="user-role"><%= Session["Role"] %></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li>
+                    <a href="AdminDashboard.aspx" class="nav-item">
+                        <i class="fa-solid fa-chart-line"></i>Dashboard
+                    </a>
+                </li>
+                <% if (Session["Role"] != null && Session["Role"].ToString() == "Admin")
+                    { %>
+                <li>
+                    <a href="ManageExam.aspx" class="nav-item">
+                        <i class="fa-solid fa-file-signature"></i>Exams
+                    </a>
+                </li>
+                <li>
+                    <a href="QuestionBank.aspx" class="nav-item">
+                        <i class="fa-solid fa-layer-group"></i>Question Bank
+                    </a>
+                </li>
+                <li>
+                    <a href="BulkUpload.aspx" class="nav-item">
+                        <i class="fa-solid fa-file-excel"></i>Bulk Upload
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="DatabaseManager.aspx" class="nav-item">
+                        <i class="fa-solid fa-database"></i>Database
+                    </a>
+                </li>
+                <% }
+                    else
+                    { %>
+                <li>
+                    <a href="Instructions.aspx" class="nav-item">
+                        <i class="fa-solid fa-circle-play"></i>Start Exam
+                    </a>
+                </li>
+                <% } %>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button id="themeToggleBtn" type="button" class="theme-toggle-btn">🌙 Dark Mode</button>
+                <a href="Login.aspx?logout=true" class="nav-item logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>Logout
+                </a>
+            </div>
+        </div>
+
+        <!-- MAIN AREA -->
+        <div class="main-area">
+
+            <header class="app-header">
+                <h1 class="header-title"><%= Page.Title %></h1>
+                <div class="header-right">
+                    <span style="font-weight: 500; font-size: 14px; opacity: 0.8;">
+                        <i class="fa-solid fa-user-shield"></i><%= Session["Role"] %> Panel
+                    </span>
+                </div>
+            </header>
+
+            <div class="content-container">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+
+        </div>
+
+    </form>
+</body>
+</html>
