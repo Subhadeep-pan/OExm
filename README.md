@@ -141,21 +141,11 @@ Every Question Bank you create gets its own physical SQL table:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/OExm.git
+git clone https://github.com/Subhadeep-pan/OExm.git
 cd OExm
 ```
 
 ### 2. Create the database
-
-Open **SSMS** or **LocalDB**, create a new database called `OExam`, then run the single script:
-
-```
-Database/OExam_Setup.sql
-```
-
-This one script creates all tables, inserts default data, seeds 10 question banks, and creates their physical bank tables — the app is ready to use immediately after.
-
-> The script is self-contained. No need to run multiple SQL files in a specific order.
 
 ### 3. Configure the connection string
 
