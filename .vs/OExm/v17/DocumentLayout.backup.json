@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "E:\\ASP.NET\\current\\OExm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|E:\\ASP.NET\\current\\OExm\\oexm\\admindashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|E:\\ASP.NET\\current\\OExm\\oexm\\examportal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\examportal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|E:\\ASP.NET\\current\\OExm\\oexm\\examportal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\examportal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|e:\\asp.net\\current\\oexm\\oexm\\admindashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\admindashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -11,15 +19,15 @@
       "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|e:\\asp.net\\current\\oexm\\oexm\\databasehelpe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|E:\\ASP.NET\\current\\OExm\\oexm\\databasehelpe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\databasehelpe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|e:\\asp.net\\current\\oexm\\oexm\\resetpassword.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|E:\\ASP.NET\\current\\OExm\\oexm\\resetpassword.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\resetpassword.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|e:\\asp.net\\current\\oexm\\oexm\\resetpassword.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|E:\\ASP.NET\\current\\OExm\\oexm\\resetpassword.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\resetpassword.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -27,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|e:\\asp.net\\current\\oexm\\oexm\\verifyotp.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|E:\\ASP.NET\\current\\OExm\\oexm\\verifyotp.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\verifyotp.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -43,20 +51,12 @@
       "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|e:\\asp.net\\current\\oexm\\oexm\\examportal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\examportal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|E:\\ASP.NET\\current\\OExm\\oexm\\result.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\result.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|E:\\ASP.NET\\current\\OExm\\oexm\\result.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\result.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|E:\\ASP.NET\\current\\OExm\\oexm\\examportal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|solutionrelative:oexm\\examportal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70BC7BBC-BC0D-4E97-8EE5-57DA5527FBB7}|OExm\\OExm.csproj|E:\\ASP.NET\\current\\OExm\\oexm\\bankhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,50 +98,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ResetPassword.aspx",
-              "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\ResetPassword.aspx",
-              "RelativeDocumentMoniker": "OExm\\ResetPassword.aspx",
-              "ToolTip": "E:\\ASP.NET\\current\\OExm\\OExm\\ResetPassword.aspx",
-              "RelativeToolTip": "OExm\\ResetPassword.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-08T14:12:39.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Result.aspx",
-              "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\Result.aspx",
-              "RelativeDocumentMoniker": "OExm\\Result.aspx",
-              "ToolTip": "E:\\ASP.NET\\current\\OExm\\OExm\\Result.aspx",
-              "RelativeToolTip": "OExm\\Result.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-06T04:25:39.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Login.aspx",
               "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\Login.aspx",
               "RelativeDocumentMoniker": "OExm\\Login.aspx",
               "ToolTip": "E:\\ASP.NET\\current\\OExm\\OExm\\Login.aspx",
               "RelativeToolTip": "OExm\\Login.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2026-07-04T12:34:34.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Login.aspx.cs",
               "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\Login.aspx.cs",
               "RelativeDocumentMoniker": "OExm\\Login.aspx.cs",
@@ -154,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ManageExam.aspx",
               "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\ManageExam.aspx",
               "RelativeDocumentMoniker": "OExm\\ManageExam.aspx",
@@ -167,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Result.aspx.cs",
               "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\Result.aspx.cs",
               "RelativeDocumentMoniker": "OExm\\Result.aspx.cs",
@@ -180,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AdminDashboard.aspx",
               "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\AdminDashboard.aspx",
               "RelativeDocumentMoniker": "OExm\\AdminDashboard.aspx",
@@ -193,7 +167,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "ExamPortal.aspx",
+              "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\ExamPortal.aspx",
+              "RelativeDocumentMoniker": "OExm\\ExamPortal.aspx",
+              "ToolTip": "E:\\ASP.NET\\current\\OExm\\OExm\\ExamPortal.aspx",
+              "RelativeToolTip": "OExm\\ExamPortal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-07T18:16:51.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExamPortal.aspx.cs",
+              "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\ExamPortal.aspx.cs",
+              "RelativeDocumentMoniker": "OExm\\ExamPortal.aspx.cs",
+              "ToolTip": "E:\\ASP.NET\\current\\OExm\\OExm\\ExamPortal.aspx.cs",
+              "RelativeToolTip": "OExm\\ExamPortal.aspx.cs",
+              "ViewState": "AgIAAOABAAAAAAAAAAA4wAwCAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T18:17:00.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Result.aspx",
+              "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\Result.aspx",
+              "RelativeDocumentMoniker": "OExm\\Result.aspx",
+              "ToolTip": "E:\\ASP.NET\\current\\OExm\\OExm\\Result.aspx",
+              "RelativeToolTip": "OExm\\Result.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-06T04:25:39.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResetPassword.aspx",
+              "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\ResetPassword.aspx",
+              "RelativeDocumentMoniker": "OExm\\ResetPassword.aspx",
+              "ToolTip": "E:\\ASP.NET\\current\\OExm\\OExm\\ResetPassword.aspx",
+              "RelativeToolTip": "OExm\\ResetPassword.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-08T14:12:39.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ResetPassword.aspx.cs",
               "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\ResetPassword.aspx.cs",
               "RelativeDocumentMoniker": "OExm\\ResetPassword.aspx.cs",
@@ -206,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "VerifyOtp.aspx",
               "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\VerifyOtp.aspx",
               "RelativeDocumentMoniker": "OExm\\VerifyOtp.aspx",
@@ -219,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DatabaseHelpe.cs",
               "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\DatabaseHelpe.cs",
               "RelativeDocumentMoniker": "OExm\\DatabaseHelpe.cs",
@@ -232,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Site.Master",
               "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\Site.Master",
               "RelativeDocumentMoniker": "OExm\\Site.Master",
@@ -245,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Web.config",
               "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\Web.config",
               "RelativeDocumentMoniker": "OExm\\Web.config",
@@ -267,32 +293,6 @@
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2026-07-07T18:42:25.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ExamPortal.aspx",
-              "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\ExamPortal.aspx",
-              "RelativeDocumentMoniker": "OExm\\ExamPortal.aspx",
-              "ToolTip": "E:\\ASP.NET\\current\\OExm\\OExm\\ExamPortal.aspx",
-              "RelativeToolTip": "OExm\\ExamPortal.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-07T18:16:51.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ExamPortal.aspx.cs",
-              "DocumentMoniker": "E:\\ASP.NET\\current\\OExm\\OExm\\ExamPortal.aspx.cs",
-              "RelativeDocumentMoniker": "OExm\\ExamPortal.aspx.cs",
-              "ToolTip": "E:\\ASP.NET\\current\\OExm\\OExm\\ExamPortal.aspx.cs",
-              "RelativeToolTip": "OExm\\ExamPortal.aspx.cs",
-              "ViewState": "AgIAAMoBAAAAAAAAAAAcwAMCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T18:17:00.482Z",
               "EditorCaption": ""
             },
             {

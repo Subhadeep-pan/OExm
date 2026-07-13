@@ -421,7 +421,13 @@
 
             allowLeavingPage();
             showTimeUpNotice();
-            document.getElementById('<%= btnSubmit.ClientID %>').click();
+
+            // Trigger the postback directly instead of .click()-ing the button.
+            // .click() would also run btnSubmit's own OnClientClick handler,
+            // which pops up a "Are you sure?" confirm() dialog -- fine for a
+            // real manual click, but wrong here: time's already up, there's
+            // nothing to confirm, and it just gets in the way.
+            __doPostBack('<%= btnSubmit.UniqueID %>', '');
         }
 
         // Non-blocking replacement for alert() -- a blocking dialog here is
@@ -458,6 +464,8 @@
 <body>
     <form id="form1" runat="server">
 
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+
         <!-- HEADER -->
         <div class="exam-header-bar">
 
@@ -487,6 +495,11 @@
         </div>
 
         <!-- MAIN LAYOUT -->
+        <!-- btnSubmit is set as a PostBackTrigger below (not an async
+             trigger) because it navigates away to Result.aspx and should
+             behave as a normal full postback. -->
+        <asp:UpdatePanel ID="upExam" runat="server" UpdateMode="Conditional">
+        <ContentTemplate>
         <div class="exam-layout">
 
             <!-- LEFT: QUESTION PANEL -->
@@ -602,13 +615,22 @@
 
         </div>
 
+        <!-- Hidden fields live inside the UpdatePanel so their server-updated
+             values (new question index, recalculated seconds left) actually
+             reach the browser after a partial postback -- outside the panel,
+             the DOM copy would go stale after the very first click. -->
+        <asp:HiddenField ID="hfQuestionIndex" runat="server" Value="0" />
+        <asp:HiddenField ID="hfRemainingSeconds" runat="server" Value="0" />
+
+        </ContentTemplate>
+        <Triggers>
+            <asp:PostBackTrigger ControlID="btnSubmit" />
+        </Triggers>
+        </asp:UpdatePanel>
+
         <div class="secure-footer">
             <i class="fa-solid fa-shield-halved"></i>Secure Exam Environment: your session is monitored for fairness and integrity.
         </div>
-
-        <!-- HIDDEN FIELDS -->
-        <asp:HiddenField ID="hfQuestionIndex" runat="server" Value="0" />
-        <asp:HiddenField ID="hfRemainingSeconds" runat="server" Value="0" />
 
     </form>
 </body>

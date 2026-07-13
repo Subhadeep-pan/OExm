@@ -54,6 +54,18 @@ namespace OExm
 
             int examId = Convert.ToInt32(Request.QueryString["ExamId"]);
 
+            // If this attempt was already submitted (e.g. the student hit
+            // Submit, then pressed the browser's Back button), don't let
+            // them back into the exam -- send them straight to their result
+            // instead. Without this check, going back before time actually
+            // ran out would silently re-open a completed attempt from
+            // scratch, since the only other guard below is time-based.
+            if (IsAttemptAlreadyCompleted())
+            {
+                Response.Redirect("Result.aspx");
+                return;
+            }
+
             if (Request["__EVENTTARGET"] == "TabSwitch")
             {
                 SaveViolation("Tab Switch");
@@ -434,13 +446,18 @@ namespace OExm
             SubmitExam();
         }
 
-        private void SubmitExam()
+        private bool IsAttemptAlreadyCompleted()
         {
             object currentStatus = DatabaseHelper.ExecuteScalar(
                 "SELECT Status FROM StudentExams WHERE StudentExamId=@id",
                 new SqlParameter[] { new SqlParameter("@id", StudentExamId) });
 
-            if (currentStatus != null && currentStatus.ToString() == "Completed")
+            return currentStatus != null && currentStatus.ToString() == "Completed";
+        }
+
+        private void SubmitExam()
+        {
+            if (IsAttemptAlreadyCompleted())
             {
                 Response.Redirect("Result.aspx");
                 return;
