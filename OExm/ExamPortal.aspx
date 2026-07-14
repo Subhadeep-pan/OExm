@@ -383,11 +383,25 @@
 
     <script type="text/javascript">
 
+        // Traps the browser Back/Forward buttons for the whole time the
+        // student is inside the exam -- pushes a dummy history entry, and
+        // whenever "back" is pressed (fires popstate), immediately pushes
+        // forward again so they just stay on this page instead of landing
+        // back on Instructions.aspx.
+        history.pushState(null, null, location.href);
+        window.addEventListener("popstate", function () {
+            history.pushState(null, null, location.href);
+        });
+
         // Server calculates the real time left (see GetSecondsLeft in code-behind);
         // this just counts it down on screen and auto-submits at zero.
         var remainingSeconds = 0;
         var timerIntervalId = null;
         var examAlreadySubmitted = false;
+
+        // How many tab switches are allowed before the exam is force-submitted.
+        var maxTabSwitches = 3;
+        var tabSwitchCount = 0;
 
         function startTimer() {
             var hiddenField = document.getElementById('<%= hfRemainingSeconds.ClientID %>');
@@ -402,7 +416,7 @@
                     // Stop ticking immediately so this never fires again,
                     // even if the submit postback takes a moment to leave the page.
                     clearInterval(timerIntervalId);
-                    autoSubmitExam();
+                    forceSubmitExam("Time is up! Submitting your exam now...");
                 }
             }, 1000);
         }
@@ -414,34 +428,39 @@
             document.getElementById('<%= lblTimer.ClientID %>').innerHTML = display;
         }
 
-        function autoSubmitExam() {
+        // Single place that actually ends the exam -- used by both the
+        // timer running out and by exceeding the tab-switch limit.
+        function forceSubmitExam(message) {
             // Belt-and-braces: even if something calls this twice, only submit once.
             if (examAlreadySubmitted) return;
             examAlreadySubmitted = true;
 
             allowLeavingPage();
-            showTimeUpNotice();
+            showBanner(message, "#dc2626");
 
             // Trigger the postback directly instead of .click()-ing the button.
             // .click() would also run btnSubmit's own OnClientClick handler,
             // which pops up a "Are you sure?" confirm() dialog -- fine for a
-            // real manual click, but wrong here: time's already up, there's
-            // nothing to confirm, and it just gets in the way.
+            // real manual click, but wrong here: there's nothing left to
+            // confirm, and it just gets in the way of an automatic submit.
             __doPostBack('<%= btnSubmit.UniqueID %>', '');
         }
 
-        // Non-blocking replacement for alert() -- a blocking dialog here is
-        // exactly what let the old code fire repeatedly: it paused this
-        // script but not the underlying timer/postback timing.
-        function showTimeUpNotice() {
+        // Non-blocking banner -- a blocking alert()/confirm() here is exactly
+        // what let earlier bugs fire repeatedly or ask pointless questions
+        // during an automatic action. color is any valid CSS color.
+        function showBanner(text, color) {
             var notice = document.createElement('div');
-            notice.textContent = "Time is up! Submitting your exam now...";
+            notice.textContent = text;
             notice.style.cssText =
                 "position:fixed; top:20px; left:50%; transform:translateX(-50%); " +
-                "background:#dc2626; color:#fff; padding:12px 24px; border-radius:8px; " +
+                "background:" + color + "; color:#fff; padding:12px 24px; border-radius:8px; " +
                 "font-family:Segoe UI,Arial,sans-serif; font-weight:600; z-index:9999; " +
                 "box-shadow:0 4px 12px rgba(0,0,0,.3);";
             document.body.appendChild(notice);
+            setTimeout(function () {
+                if (notice.parentNode) notice.parentNode.removeChild(notice);
+            }, 4000);
         }
 
         window.onbeforeunload = function () {
@@ -452,9 +471,24 @@
             window.onbeforeunload = null;
         }
 
-        // Tell the server if the student switches tabs, so it can be logged.
+        // Tell the server whenever the student switches away from this tab,
+        // so every switch gets logged -- and once they come back, either
+        // warn them (still under the limit) or force-submit (limit hit).
         document.addEventListener("visibilitychange", function () {
-            if (document.hidden) __doPostBack('TabSwitch', '');
+            if (examAlreadySubmitted) return;
+
+            if (document.hidden) {
+                tabSwitchCount++;
+                __doPostBack('TabSwitch', tabSwitchCount.toString());
+            } else if (tabSwitchCount >= maxTabSwitches) {
+                forceSubmitExam("Too many tab switches detected. Submitting your exam now...");
+            } else if (tabSwitchCount > 0) {
+                showBanner(
+                    "Tab switch detected (" + tabSwitchCount + "/" + maxTabSwitches +
+                    "). Switching away again may auto-submit your exam.",
+                    "#a16207"
+                );
+            }
         });
 
         window.addEventListener('load', startTimer);
